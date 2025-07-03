@@ -5,9 +5,10 @@ import { Button } from "@/components/ui/button"
 import {  Download, Mail, MapPin } from "lucide-react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { RiNextjsFill, RiReactjsFill, RiTailwindCssFill, RiTwitterXLine } from "react-icons/ri"
-import { SiMongodb } from "react-icons/si"
+import { SiMongodb, SiTypescript } from "react-icons/si"
 import Link from "next/link"
 import info from "@/lib/info"
+import { BsFiletypeScss } from "react-icons/bs"
 
 export default function Hero() {
   return (
@@ -157,9 +158,9 @@ export default function Hero() {
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
-                  className="text-4xl text-green-600"
+                  className="text-4xl text-yellow-600"
                 >
-                  <SiMongodb />
+                  <SiTypescript />
                 </motion.div>
               </motion.div>
 
@@ -179,7 +180,7 @@ export default function Hero() {
                 }}
               >
                 <div className="text-4xl text-sky-500">
-                  <RiTailwindCssFill />
+                  <BsFiletypeScss />
                 </div>
               </motion.div>
             </div>
@@ -213,7 +214,7 @@ export default function Hero() {
                 delay: 1
               }}
             >
-              Tailwind CSS
+              SCSS
             </motion.div>
 
             <motion.div
@@ -245,7 +246,7 @@ export default function Hero() {
                 delay: 1.5
               }}
             >
-              MongoDB
+              TypeScript
             </motion.div>
           </div>
         </motion.div>
